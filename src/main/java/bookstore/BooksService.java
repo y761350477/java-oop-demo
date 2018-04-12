@@ -67,6 +67,10 @@ public class BooksService {
             book_name_lended = book_name_lend.substring(0, book_name_lended_length - 2);
             System.out.println("抱歉此书:\t" + book_name_lended + "已被别人借出");
         }
+
+        if (book_name_lended_length == 0 && book_name_lend_length == 0) {
+            System.out.println("输入的书籍名不存在!");
+        }
     }
 
     /**
