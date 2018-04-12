@@ -2,8 +2,11 @@ package bookstore;
 
 public class Books {
 
+    // 书籍名称 Created by YC.
     private String book_name;
+    // 书籍价格 Created by YC.
     private int book_price;
+    // 书籍状态 Created by YC.
     private boolean booK_status;
 
     public Books() {
