@@ -29,4 +29,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.0.8'
+
+    //fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+
 }
