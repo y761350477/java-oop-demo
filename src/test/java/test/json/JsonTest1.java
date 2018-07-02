@@ -35,14 +35,17 @@ import java.io.IOException;
 public class JsonTest1 {
 
     public static void main(String[] args) throws IOException {
-        /*ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(JsonParser.Feature.AUTO_CLOSE_SOURCE, true);*/
         String string = "";
-        /*String asString = objectMapper.writeValueAsString(string);
+
+        // Example1(会报错)
+        /*ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(JsonParser.Feature.AUTO_CLOSE_SOURCE, true);
+        String asString = objectMapper.writeValueAsString(string);
         User user = new User();
         User readValue = objectMapper.readValue(asString, User.class);
         System.out.println(readValue.getName());*/
 
+        // Example2(不会报错)
         JSONObject jsonObject = new JSONObject();
         User user = JSON.parseObject(string, User.class);
         System.out.println(user.getName());
